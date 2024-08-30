@@ -693,6 +693,7 @@ in {
           RestrictNamespaces = true;
           RestrictRealtime = true;
           RestrictSUIDSGID = true;
+          AmbientCapabilities = [ "~CAP_CHOWN" "~CAP_FOWNER" ];
           CapabilityBoundingSet = [
             "~CAP_SYS_PTRACE" "~CAP_SYS_ADMIN"
             "~CAP_SETGID" "~CAP_SETUID" "~CAP_SETPCAP"
